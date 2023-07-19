@@ -1,5 +1,5 @@
 /* 노말라이즈 */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:ital,wght@1,700;1,900&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -18,6 +18,13 @@ a {
   color: inherit;
 }
 
+h1,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 div {
   box-sizing: border-box;
 }
@@ -28,11 +35,19 @@ div {
   margin: auto;
 }
 
+.empty {
+  flex-grow: 1;
+}
+
 .cl-black {
   color: #333;
 }
 
 .cl-gray {
+  color: #9b9a9a;
+}
+
+.cl-l-gray {
   color: #ccc;
 }
 
@@ -57,4 +72,93 @@ div {
   border-radius: 10px;
   outline: none;
   padding: 10px 26px;
+}
+
+/* header */
+header {
+  height: 120px;
+  border-bottom: 1px solid #eee;
+}
+
+header .container {
+  height: 100%;
+}
+
+header .header-top {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header ul {
+  display: flex;
+}
+
+header .header-top ul li {
+  font-size: 12px;
+  padding: 0 7px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+header .header-mid {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .header-mid .header-mid__left {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 900;
+}
+
+header .header-mid .header-mid__right ul li {
+  font-size: 18px;
+  margin: 0 20px;
+}
+
+header .header-mid .header-mid__right ul li:first-child {
+  font-weight: 700;
+}
+
+header .header-mid .header-mid__search {
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+header .header-mid .header-mid__search i {
+  cursor: pointer;
+}
+
+header .header-bottom {
+  height: 30%;
+  display: flex;
+  align-items: center;
+}
+
+header .header-bottom ul {
+  height: 100%;
+}
+
+header .header-bottom ul li {
+  height: 95%;
+  margin-right: 25px;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 2px solid transparent;
+}
+
+header .header-bottom ul li:first-child {
+  font-weight: 700;
+}
+
+header .header-bottom ul li a {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
