@@ -1,0 +1,60 @@
+/* 노말라이즈 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+/* 라이브러리 */
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.cl-black {
+  color: #333;
+}
+
+.cl-gray {
+  color: #ccc;
+}
+
+.bd-red {
+  border: 1px solid red;
+}
+
+.bd-blue {
+  border: 1px solid blue;
+}
+
+.bd-green {
+  border: 1px solid red;
+}
+
+.btn {
+  font: inherit;
+  font-size: 14px;
+  background-color: #fff;
+  color: #777;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px 26px;
+}
