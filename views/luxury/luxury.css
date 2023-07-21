@@ -2,8 +2,8 @@
 img {
     width: 100%;
     height: 100%;
-    user-select: unset;
-    object-fit: cover;
+    user-select: none;
+    object-fit: contain;
 }
 
 a {
@@ -123,6 +123,52 @@ figcaption {
 /* 배너 영역 */
 .banner-section {
     padding: 0;
+}
+
+.banner-item {
+    position: relative;
+    height: 480px;
+}
+
+.banner1 {
+    background-color: #181818;
+}
+
+.banner2 {
+    background-color: #E6EAF2;
+}
+
+.banner3 {
+    background-color: #F2F1E6;
+}
+
+.banner4 {
+    background-color: #D2C7B5;
+}
+
+.banner5 {
+    background-color: #E8F2E6;
+}
+
+.banner6 {
+    background-color: #E7E2EB;
+}
+
+.banner7 {
+    background-color: #A7C4DB;
+}
+
+.banner-item img {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 480px;
+}
+
+#pagination {
+    position: absolute;
+    bottom: 17px;
 }
 
 /* 카테고리 영역 */
