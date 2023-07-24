@@ -1,0 +1,111 @@
+footer .footer_top {
+    border-bottom: 1px solid #eee;
+    padding: 35px 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer .footer_top div {
+    padding: 20px 0;
+  }
+  
+  footer .footer_top .footer_top_info {
+    margin-right: 120px;
+  }
+  
+  footer .footer_top .footer_top_support {
+    flex-grow: 2;
+  }
+  
+  footer .footer_top ul li {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #999;
+  }
+  
+  footer .footer_top ul li:first-child {
+    padding: 5px 0;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  footer .footer_top .footer_top_service p {
+    font-size: 13px;
+    color: #999;
+  }
+  
+  footer .footer_top .footer_top_service p:first-child {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  footer .footer_top .footer_top_service p:last-of-type {
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  footer .footer_top button {
+    margin-top: 15px;
+    background-color: #222;
+    color: #eee;
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  footer .footer_bottom {
+    padding: 35px 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer .footer_bottom .footer_bottom_law {
+    width: 650px;
+  }
+  
+  footer .footer_bottom .footer_bottom_law ul {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  footer .footer_bottom .footer_bottom_law ul li {
+    margin-right: 20px;
+  }
+  
+  footer .footer_bottom .footer_bottom_law .info_1 {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 40px;
+  }
+  
+  footer .footer_bottom .footer_bottom_law .info_1 span {
+    margin-right: 20px;
+  }
+  
+  footer .footer_bottom .footer_bottom_law .info_2 {
+    margin-bottom: 20px;
+  }
+  
+  footer .footer_bottom .footer_bottom_law .info_2 p:first-child {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  footer .footer_bottom .footer_bottom_law .info_2 p:last-child {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  footer .footer_bottom .footer_bottom_law .info_3 p {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  footer .footer_bottom .footer_bottom_logo span {
+    margin-left: 20px;
+  }
