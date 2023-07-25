@@ -10,14 +10,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../../main.css" />
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/footer.css">
-
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="../../main.js" defer></script>
-  <script src="./swiper.js"></script>
+  <script src="./swiper.js" defer></script>
 </head>
 
 <body>
@@ -68,39 +67,39 @@
     </div>
   </header>
   <main class="main">
-    <section class="banner">
-      <div class="swiper-container">
+    <div class="banner">
+      <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img class="swiper" src="assets/images/swiper1.png">
+            <img class="swiper-image" src="assets/images/swiper1.png">
           </div>
           <div class="swiper-slide">
-            <img class="swiper" src="assets/images/swiper2.png">
+            <img class="swiper-image" src="assets/images/swiper2.png">
           </div>
           <div class="swiper-slide">
-            <img class="swiper" src="assets/images/swiper3.png">
+            <img class="swiper-image" src="assets/images/swiper3.png">
           </div>
           <div class="swiper-slide">
-            <img class="swiper" src="assets/images/swiper4.png">
+            <img class="swiper-image" src="assets/images/swiper4.png">
           </div>
           <div class="swiper-slide">
-            <img class="swiper" src="assets/images/swiper5.png">
+            <img class="swiper-image" src="assets/images/swiper5.png">
           </div>
           <div class="swiper-slide">
-            <img class="swiper" src="assets/images/swiper6.png">
+            <img class="swiper-image" src="assets/images/swiper6.png">
           </div>
           <div class="swiper-slide">
-            <img class="swiper" src="assets/images/swiper7.png">
+            <img class="swiper-image" src="assets/images/swiper7.png">
           </div>
           <div class="swiper-slide">
-            <img class="swiper" src="assets/images/swiper8.png">
+            <img class="swiper-image" src="assets/images/swiper8.png">
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
         </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>          
+        <div class="swiper-pagination"></div>
       </div>
-    </section>
+    </div>
     <section class="popular">
       <div class="thumbnail_container2">
         <div class="thumbnail_row2">
@@ -344,7 +343,7 @@
         </div>
         <div class="thumbnail_row2">
           <img class="thumbnail2" src="assets/images/brand_focus4.png">
-          <p class="brand_name" 포터</p>
+          <p class="brand_name">포터</p>
         </div>
         <div class="thumbnail_row2">
           <img class="thumbnail2" src="assets/images/brand_focus5.png">
@@ -370,6 +369,7 @@
           <img class="thumbnail2" src="assets/images/brand_focus10.png">
           <p class="brand_name">몽끌레르</p>
         </div>
+      </div>
     </section>
     <section class="zip">
 

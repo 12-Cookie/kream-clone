@@ -1,4 +1,4 @@
-const mySwiper = new Swiper('.swiper-container', {
+const mySwiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   autoplay: {
