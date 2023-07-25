@@ -1,4 +1,4 @@
-const mySwiper = new Swiper('.swiper', {
+const mySwiper = new Swiper('.main_swiper', {
   direction: 'horizontal',
   loop: true,
   autoplay: {
@@ -9,7 +9,16 @@ const mySwiper = new Swiper('.swiper', {
     type: 'bullets',
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.main_prev_btn',
+    prevEl: '.main_next_btn',
   },
+});
+
+const mySwiper2 = new Swiper('.lookbook_swiper', {
+  direction: 'horizontal',
+  navigation: {
+    nextEl: '.lookbook_prev_btn',
+    prevEl: '.lookbook_next_btn',
+  },
+  slidesPerView: 6,
 });
