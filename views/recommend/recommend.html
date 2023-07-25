@@ -1,72 +1,955 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KREAM | 한정판 거래의 FLEX</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KREAM | 한정판 거래의 FLEX</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Slick Slider CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <!-- Slick Slider Theme CSS (optional) -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- font awesome -->
 
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+        <link href="style.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="../../main.css" />
-    <script src="../../main.js" defer></script>
-  </head>
-  <body>
-    <header class="">
-      <div class="container">
-        <div class="header-top cl-gray">
-          <ul>
-            <li>고객센터</li>
-            <li>마이페이지</li>
-            <li>관심상품</li>
-            <li>알림</li>
-            <li>로그인</li>
-          </ul>
+        <link rel="stylesheet" href="../../main.css" />
+        <script src="../../main.js" defer></script>
+    </head>
+    <body>
+        <header class="">
+            <div class="container">
+                <div class="header-top cl-gray">
+                    <ul>
+                        <li>고객센터</li>
+                        <li>마이페이지</li>
+                        <li>관심상품</li>
+                        <li>알림</li>
+                        <li>로그인</li>
+                    </ul>
+                </div>
+                <div class="header-mid cl-black">
+                    <div class="header-mid__left">
+                        <a href="#">KREAM</a>
+                    </div>
+                    <div class="empty"></div>
+                    <div class="header-mid__right">
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">STYLE</a></li>
+                            <li><a href="#">SHOP</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-mid__search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <ul class="header-lists">
+                        <li class="header-list active"><a href="/">랭킹</a></li>
+                        <li class="header-list">
+                            <a
+                                href="../recommend/recommend.html"
+                                style="border-bottom: 2px solid #333"
+                                >추천</a
+                            >
+                        </li>
+                        <li class="header-list">
+                            <a href="../luxury/luxury.html">럭셔리</a>
+                        </li>
+                        <li class="header-list">
+                            <a href="../male/male.html">남성</a>
+                        </li>
+                        <li class="header-list">
+                            <a href="../female/female.html">여성</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <swiper-container
+            class="mySwiper"
+            pagination="true"
+            pagination-clickable="true"
+            navigation="true"
+            space-between="30"
+            loop="true">
+            <swiper-slide id="slider-color-1"
+                ><img src="images/banner (1).png"
+            /></swiper-slide>
+            <swiper-slide id="slider-color-2"
+                ><img src="images/banner (2).png"
+            /></swiper-slide>
+            <swiper-slide id="slider-color-3"
+                ><img src="images/banner (3).png"
+            /></swiper-slide>
+            <swiper-slide id="slider-color-4"
+                ><img src="images/banner (5).png"
+            /></swiper-slide>
+            <swiper-slide id="slider-color-5"
+                ><img src="images/banner.png"
+            /></swiper-slide>
+        </swiper-container>
+
+        <nav>
+            <div class="container nav-container">
+                <div class="item1">
+                    <img src="images/nav1.jpg" alt="" />
+                    <div>크림 드로우</div>
+                </div>
+                <div class="item2">
+                    <img src="images/nav2.jpg" alt="" />
+                    <div>셀럽픽</div>
+                </div>
+
+                <div class="item3">
+                    <img src="images/nav3.jpg" alt="" />
+                    <div>남성 추천</div>
+                </div>
+                <div class="item4">
+                    <img src="images/nav4.jpg" alt="" />
+                    <div>여성 추천</div>
+                </div>
+
+                <div class="item5">
+                    <img src="images/nav5.jpg" alt="" />
+                    <div>이번 주 신상</div>
+                </div>
+                <div class="item1">
+                    <img src="images/nav1.jpg" alt="" />
+                    <div>크림 드로우</div>
+                </div>
+                <div class="item2">
+                    <img src="images/nav2.jpg" alt="" />
+                    <div>셀럽픽</div>
+                </div>
+
+                <div class="item3">
+                    <img src="images/nav3.jpg" alt="" />
+                    <div>남성 추천</div>
+                </div>
+                <div class="item4">
+                    <img src="images/nav4.jpg" alt="" />
+                    <div>여성 추천</div>
+                </div>
+
+                <div class="item5">
+                    <img src="images/nav5.jpg" alt="" />
+                    <div>이번 주 신상</div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <hr />
         </div>
-        <div class="header-mid cl-black">
-          <div class="header-mid__left">
-            <a href="#">KREAM</a>
-          </div>
-          <div class="empty"></div>
-          <div class="header-mid__right">
-            <ul>
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">STYLE</a></li>
-              <li><a href="#">SHOP</a></li>
-            </ul>
-          </div>
-          <div class="header-mid__search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
+        <main>
+            <div class="container">
+                <div class="main_big_text">Just Dropped</div>
+                <div class="main_small_text">발매 상품</div>
+                <div class="main-box">
+                    <div class="main-box-item">
+                        <img src="images/clothes-1.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-2.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-3.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-4.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="none1" class="main-box">
+                    <div class="main-box-item">
+                        <img src="images/clothes-1.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-2.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-3.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-4.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="none2" class="main-box">
+                    <div class="main-box-item">
+                        <img src="images/clothes-1.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-2.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-3.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-4.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="getElementById" class="btn-cover">
+                    <button onclick="spread()" id="hidden-button-1" class="btn">
+                        더보기
+                    </button>
+                </div>
+                <hr />
+            </div>
+        </main>
+        <nav>
+            <div class="container">
+                <div class="main_big_text">Top 15 Brand</div>
+                <div class="main_small_text">인기 탑 15 브랜드</div>
+                <div class="nav-grid">
+                    <div class="nav-grid-item">
+                        <img src="images/nav1.jpg" alt="" />
+                        <div>크림 드로우</div>
+                    </div>
+                    <div class="nav-grid-item">
+                        <img src="images/nav2.jpg" alt="" />
+                        <div>크림 드로우</div>
+                    </div>
+                    <div class="nav-grid-item">
+                        <img src="images/nav3.jpg" alt="" />
+                        <div>크림 드로우</div>
+                    </div>
+                    <div class="nav-grid-item">
+                        <img src="images/nav4.jpg" alt="" />
+                        <div>크림 드로우</div>
+                    </div>
+                    <div class="nav-grid-item">
+                        <img src="images/nav5.jpg" alt="" />
+                        <div>크림 드로우</div>
+                    </div>
+                    <div class="nav-grid-item">
+                        <img src="images/nav1.jpg" alt="" />
+                        <div>크림 드로우</div>
+                    </div>
+                    <div class="nav-grid-item">
+                        <img src="images/nav2.jpg" alt="" />
+                        <div>크림 드로우</div>
+                    </div>
+                    <div class="nav-grid-item">
+                        <img src="images/nav3.jpg" alt="" />
+                        <div>크림 드로우</div>
+                    </div>
+                    <div class="nav-grid-item">
+                        <img src="images/nav4.jpg" alt="" />
+                        <div>크림 드로우</div>
+                    </div>
+                    <div class="nav-grid-item">
+                        <img src="images/nav5.jpg" alt="" />
+                        <div>크림 드로우</div>
+                    </div>
+                    <div class="nav-grid-item">
+                        <img src="images/nav1.jpg" alt="" />
+                        <div>크림 드로우</div>
+                    </div>
+                    <div class="nav-grid-item">
+                        <img src="images/nav2.jpg" alt="" />
+                        <div>크림 드로우</div>
+                    </div>
+                    <div class="nav-grid-item">
+                        <img src="images/nav3.jpg" alt="" />
+                        <div>크림 드로우</div>
+                    </div>
+                    <div class="nav-grid-item">
+                        <img src="images/nav4.jpg" alt="" />
+                        <div>크림 드로우</div>
+                    </div>
+                    <div class="nav-grid-item">
+                        <img src="images/nav5.jpg" alt="" />
+                        <div>크림 드로우</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="ad">
+            <img src="images/banner (1).png" alt="" />
         </div>
-        <div class="header-bottom">
-          <ul class="header-lists">
-            <li class="header-list active"><a href="/">랭킹</a></li>
-            <li class="header-list">
-              <a
-                href="../recommend/recommend.html"
-                style="border-bottom: 2px solid #333"
-                >추천</a
-              >
-            </li>
-            <li class="header-list">
-              <a href="../luxury/luxury.html">럭셔리</a>
-            </li>
-            <li class="header-list">
-              <a href="../male/male.html">남성</a>
-            </li>
-            <li class="header-list">
-              <a href="../female/female.html">여성</a>
-            </li>
-          </ul>
+        <main>
+            <div class="container">
+                <div class="main_big_text">My First Luxury Bags</div>
+                <div class="main_small_text">나의 첫 럭셔리 입문백</div>
+                <div class="main-box">
+                    <div class="main-box-item">
+                        <img src="images/clothes-1.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-2.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-3.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-4.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-cover">
+                    <button id="hidden-button-1" class="btn">더보기</button>
+                </div>
+                <hr />
+            </div>
+        </main>
+        <picture>
+            <div class="container">
+                <div class="main_big_text">#아이스크림챌린지</div>
+                <div class="main_small_text">
+                    더위를 이기는 쿨한 썸머 스타일링!
+                </div>
+                <swiper-container
+                    class="mySwiper swiper-container"
+                    slides-per-view="6"
+                    centered-slides="true"
+                    space-between="30"
+                    pagination="true"
+                    pagination-type="fraction"
+                    navigation="true">
+                    <swiper-slide class="swiper-slide">
+                        <img src="images/스타일 카드 (1).png "
+                    /></swiper-slide>
+                    <swiper-slide class="swiper-slide">
+                        <img src="images/스타일 카드.png " />
+                    </swiper-slide>
+                    <swiper-slide class="swiper-slide">
+                        <img src="images/스타일 카드 (3).png" />
+                    </swiper-slide>
+
+                    <swiper-slide class="swiper-slide">
+                        <img src="images/스타일 카드 (4).png" />
+                    </swiper-slide>
+                    <swiper-slide class="swiper-slide"
+                        ><img src="images/스타일 카드 (5).png" />
+                    </swiper-slide>
+                    <swiper-slide class="swiper-slide">
+                        <img src="images/스타일 카드 (1).png "
+                    /></swiper-slide>
+                    <swiper-slide class="swiper-slide">
+                        <img src="images/스타일 카드.png " />
+                    </swiper-slide>
+                    <swiper-slide class="swiper-slide">
+                        <img src="images/스타일 카드 (3).png" />
+                    </swiper-slide>
+
+                    <swiper-slide class="swiper-slide">
+                        <img src="images/스타일 카드 (4).png" />
+                    </swiper-slide>
+                    <swiper-slide class="swiper-slide"
+                        ><img src="images/스타일 카드 (5).png" />
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+        </picture>
+        <div class="ad color-blue">
+            <img src="images/banner (7).png" alt="" />
         </div>
-      </div>
-    </header>
-  </body>
+        <main>
+            <div class="container">
+                <div class="main_big_text">New In</div>
+                <div class="main_small_text">신규 등록 상품</div>
+                <div class="main-box">
+                    <div class="main-box-item">
+                        <img src="images/clothes-1.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-2.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-3.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-4.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-cover">
+                    <button id="hidden-button-1" class="btn">더보기</button>
+                </div>
+            </div>
+        </main>
+        <div class="ad">
+            <img src="images/banner (1).png" alt="" />
+        </div>
+        <main>
+            <div class="container">
+                <div class="main_big_text">Modern Luxury</div>
+                <div class="main_small_text">인기 프라다 컬렉션</div>
+                <div class="main-box">
+                    <div class="main-box-item">
+                        <img src="images/clothes-1.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-2.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-3.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-4.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-cover">
+                    <button id="hidden-button-1" class="btn">더보기</button>
+                </div>
+            </div>
+        </main>
+        <div class="ad color-blue">
+            <img src="images/banner (7).png" alt="" />
+        </div>
+        <main>
+            <div class="container">
+                <div class="main_big_text">Unique Identity</div>
+                <div class="main_small_text">일본 브랜드만의 독보적인 감성</div>
+                <div class="main-box">
+                    <div class="main-box-item">
+                        <img src="images/clothes-1.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-2.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-3.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-4.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-cover">
+                    <button id="hidden-button-1" class="btn">더보기</button>
+                </div>
+            </div>
+        </main>
+        <div class="ad">
+            <img src="images/banner (1).png" alt="" />
+        </div>
+        <main>
+            <div class="container">
+                <div class="main_big_text">Old Money Aesthetic</div>
+                <div class="main_small_text">
+                    새롭게 떠오르는 올드 머니 패션!
+                </div>
+                <div class="main-box">
+                    <div class="main-box-item">
+                        <img src="images/clothes-1.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-2.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-3.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-4.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-cover">
+                    <button id="hidden-button-1" class="btn">더보기</button>
+                </div>
+            </div>
+        </main>
+        <div class="ad color-blue">
+            <img src="images/banner (7).png" alt="" />
+        </div>
+        <main>
+            <div class="container">
+                <div class="main_big_text">My First Luxury Bags</div>
+                <div class="main_small_text">나의 첫 럭셔리 입문백</div>
+                <div class="main-box">
+                    <div class="main-box-item">
+                        <img src="images/clothes-1.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-2.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-3.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-4.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-cover">
+                    <button id="hidden-button-1" class="btn">더보기</button>
+                </div>
+                <hr />
+            </div>
+        </main>
+        <picture>
+            <div class="container">
+                <div class="main_big_text">#아이스크림챌린지</div>
+                <div class="main_small_text">
+                    더위를 이기는 쿨한 썸머 스타일링!
+                </div>
+                <swiper-container
+                    class="mySwiper swiper-container"
+                    slides-per-view="6"
+                    centered-slides="true"
+                    space-between="30"
+                    pagination="true"
+                    pagination-type="fraction"
+                    navigation="true">
+                    <swiper-slide class="swiper-slide">
+                        <img src="images/스타일 카드 (1).png "
+                    /></swiper-slide>
+                    <swiper-slide class="swiper-slide">
+                        <img src="images/스타일 카드.png " />
+                    </swiper-slide>
+                    <swiper-slide class="swiper-slide">
+                        <img src="images/스타일 카드 (3).png" />
+                    </swiper-slide>
+
+                    <swiper-slide class="swiper-slide">
+                        <img src="images/스타일 카드 (4).png" />
+                    </swiper-slide>
+                    <swiper-slide class="swiper-slide"
+                        ><img src="images/스타일 카드 (5).png" />
+                    </swiper-slide>
+                    <swiper-slide class="swiper-slide">
+                        <img src="images/스타일 카드 (1).png "
+                    /></swiper-slide>
+                    <swiper-slide class="swiper-slide">
+                        <img src="images/스타일 카드.png " />
+                    </swiper-slide>
+                    <swiper-slide class="swiper-slide">
+                        <img src="images/스타일 카드 (3).png" />
+                    </swiper-slide>
+
+                    <swiper-slide class="swiper-slide">
+                        <img src="images/스타일 카드 (4).png" />
+                    </swiper-slide>
+                    <swiper-slide class="swiper-slide"
+                        ><img src="images/스타일 카드 (5).png" />
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+        </picture>
+        <div class="ad">
+            <img src="images/banner (1).png" alt="" />
+        </div>
+        <main>
+            <div class="container">
+                <div class="main_big_text">New Lowest Asks</div>
+                <div class="main_small_text">새로운 즉시 구매가</div>
+                <div class="main-box">
+                    <div class="main-box-item">
+                        <img src="images/clothes-1.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-2.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-3.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-4.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-cover">
+                    <button id="hidden-button-1" class="btn">더보기</button>
+                </div>
+                <hr />
+            </div>
+        </main>
+        <main>
+            <div class="container">
+                <div class="main_big_text">New Highest Bids</div>
+                <div class="main_small_text">새로운 즉시 판매가</div>
+                <div class="main-box">
+                    <div class="main-box-item">
+                        <img src="images/clothes-1.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-2.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-3.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                    <div class="main-box-item">
+                        <img src="images/clothes-4.jpg" />
+                        <div class="main-box-item-text">
+                            <span> Stussy</span>
+                            <span>Stussy X Sean Paul T-shirt Black</span>
+                        </div>
+                        <div class="main-box-item-text">
+                            <span> 81000원</span>
+                            <span class="color-gray">즉시구매가</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-cover">
+                    <button id="hidden-button-1" class="btn">더보기</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <hr />
+                <div></div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+        <script src="recommend.js"></script>
+    </body>
 </html>
