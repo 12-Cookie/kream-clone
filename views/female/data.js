@@ -1,0 +1,22 @@
+export const mainVis = [
+  {
+    src:'./img/main-vis-1.jpg',
+    bgColor:''
+  },
+  {
+    src:'./img/main-vis-2.jpg',
+    bgColor:''
+  },
+  {
+    src:'./img/main-vis-3.jpg',
+    bgColor:''
+  },
+  {
+    src:'./img/main-vis-4.jpg',
+    bgColor:''
+  },
+  {
+    src:'./img/main-vis-5.jpg',
+    bgColor:''
+  },
+]
