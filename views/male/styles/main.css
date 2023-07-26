@@ -72,24 +72,52 @@ section{
     color: #333;
     margin-bottom: 8px;
 }
-
 /* p tags end*/
 
-.swiper-container{
-    width: 100%;
-}
-
-.swiper-wrapper{
-    width: 100%;
+.banner{
+    padding: 0;
 }
 
 .swiper-slide{
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 480px;   
 }
 
-.swiper{
-    object-fit: cover;
-    width: 100%;
+.slide1{
+    background-color: #0f3961;
+}
+
+.slide2{
+    background-color: #4077a9;
+}
+
+.slide3{
+    background-color: #b52838;
+}
+
+.slide4{
+    background-color: #2434e5;
+}
+
+.slide5{
+    background-color: #a2aea1;
+}
+
+.slide6{
+    background-color: #f6edec;
+}
+
+.slide7{
+    background-color: #f1f0ea;
+}
+
+.slide8{
+    background-color: #e2eff1;
+}
+
+.swiper-image{
+    max-height: 480px;
 }
 
 .topbar_wrapper{
@@ -151,7 +179,6 @@ section{
 }
 
 .thumbnail_row{
-    position: relative;
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -160,6 +187,10 @@ section{
     padding-left: 16px;
     padding-right: 16px;
     text-align: center;
+}
+
+.thumbnail_wrapper{
+    position: relative;
 }
 
 .thumbnail {
@@ -179,8 +210,8 @@ section{
     position: absolute;
     width: 24px;
     height: 24px;
-    bottom: 140px;
-    right: 24px;
+    bottom: 7%;
+    right: 6%;
 }
 
 .thumbnail_info {
@@ -212,4 +243,44 @@ section{
     padding-bottom: 50px;
     display: flex;
     justify-content: center;
+}
+
+.lookbook_swiper{
+    width: 100%;
+}
+
+.lookbook_container{
+    height: 260px;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+}
+
+.lookbook_wrapper{
+    max-height: 260px;
+    max-width: 200px;
+    position: relative;
+}
+
+.lookbook{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.author{    
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    max-height: 36px;
+    border-radius: 20px;
+}
+
+.tag{
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+    font-size: 13px;
+    color: #fff;
 }

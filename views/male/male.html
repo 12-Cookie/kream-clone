@@ -10,14 +10,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../../main.css" />
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/footer.css">
-
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="../../main.js" defer></script>
-  <script src="./swiper.js"></script>
+  <script src="./swiper.js" defer></script>
 </head>
 
 <body>
@@ -68,39 +67,39 @@
     </div>
   </header>
   <main class="main">
-    <section class="banner">
-      <div class="swiper-container">
+    <div class="banner">
+      <div class="swiper-container main_swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img class="swiper" src="assets/images/swiper1.png">
+          <div class="swiper-slide slide1">
+            <img class="swiper-image" src="assets/images/swiper1.png">
           </div>
-          <div class="swiper-slide">
-            <img class="swiper" src="assets/images/swiper2.png">
+          <div class="swiper-slide slide2">
+            <img class="swiper-image" src="assets/images/swiper2.png">
           </div>
-          <div class="swiper-slide">
-            <img class="swiper" src="assets/images/swiper3.png">
+          <div class="swiper-slide slide3">
+            <img class="swiper-image" src="assets/images/swiper3.png">
           </div>
-          <div class="swiper-slide">
-            <img class="swiper" src="assets/images/swiper4.png">
+          <div class="swiper-slide slide4">
+            <img class="swiper-image" src="assets/images/swiper4.png">
           </div>
-          <div class="swiper-slide">
-            <img class="swiper" src="assets/images/swiper5.png">
+          <div class="swiper-slide slide5">
+            <img class="swiper-image" src="assets/images/swiper5.png">
           </div>
-          <div class="swiper-slide">
-            <img class="swiper" src="assets/images/swiper6.png">
+          <div class="swiper-slide slide6">
+            <img class="swiper-image" src="assets/images/swiper6.png">
           </div>
-          <div class="swiper-slide">
-            <img class="swiper" src="assets/images/swiper7.png">
+          <div class="swiper-slide slide7">
+            <img class="swiper-image" src="assets/images/swiper7.png">
           </div>
-          <div class="swiper-slide">
-            <img class="swiper" src="assets/images/swiper8.png">
+          <div class="swiper-slide slide8">
+            <img class="swiper-image" src="assets/images/swiper8.png">
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
         </div>
+        <div class="swiper-button-prev main_prev_btn"></div>
+        <div class="swiper-button-next main_next_btn"></div>
+        <div class="swiper-pagination"></div>
       </div>
-    </section>
+    </div>
     <section class="popular">
       <div class="thumbnail_container2">
         <div class="thumbnail_row2">
@@ -141,8 +140,10 @@
       </div>
       <div class="thumbnail_container">
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/for_men1.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/for_men1.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Polo Ralph Lauren</p>
             <p class="cloth_name">Polo Ralph Lauren Classic Fit Garment-Dyed Oxford Shirt White</p>
@@ -152,8 +153,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/for_men2.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/for_men2.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Gucci</p>
             <p class="cloth_name">Gucci 1953 Horsebit Leather Loafers Black</p>
@@ -163,8 +166,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/for_men3.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/for_men3.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Oofox</p>
             <p class="cloth_name">Oofox x Thisisneverthat Clog Black</p>
@@ -174,8 +179,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/for_men4.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/for_men4.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Softoffice</p>
             <p class="cloth_name">Softoffice Community Tee- Black</p>
@@ -206,8 +213,10 @@
       </div>
       <div class="thumbnail_container">
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/rising_sneakers1.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/rising_sneakers1.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Asics</p>
             <p class="cloth_name">Asics GT-2160 White llusion Blue</p>
@@ -217,8 +226,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/rising_sneakers2.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/rising_sneakers2.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Nike</p>
             <p class="cloth_name">Nike Air Humara Midnight Navy and Obsidian</p>
@@ -228,8 +239,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/rising_sneakers3.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/rising_sneakers3.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Nike</p>
             <p class="cloth_name">Nike x Comme des Garcons Homme Plus Air Max Sunder SP White Black</p>
@@ -239,8 +252,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/rising_sneakers4.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/rising_sneakers4.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Nike</p>
             <p class="cloth_name">Nike Dunk Low Pro Premium Medium Curry</p>
@@ -270,8 +285,10 @@
       </div>
       <div class="thumbnail_container">
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/new_arrivals1.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/new_arrivals1.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Human Made</p>
             <p class="cloth_name">Human Made Peanuts T-shirt #2 Black</p>
@@ -281,8 +298,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/new_arrivals2.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/new_arrivals2.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">ETCE</p>
             <p class="cloth_name">[KREAM Exclusive] Etce Damaged Denim Cap Black</p>
@@ -292,8 +311,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/new_arrivals3.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/new_arrivals3.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Undermycar</p>
             <p class="cloth_name">Undermycar Mu.06 Anti Fxxking Logo Saruel Sweat Pants Black</p>
@@ -303,8 +324,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/new_arrivals4.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/new_arrivals4.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">NETHERWORLD</p>
             <p class="cloth_name">Netherworld Internet Logo T-Shirt White</p>
@@ -344,7 +367,7 @@
         </div>
         <div class="thumbnail_row2">
           <img class="thumbnail2" src="assets/images/brand_focus4.png">
-          <p class="brand_name" 포터</p>
+          <p class="brand_name">포터</p>
         </div>
         <div class="thumbnail_row2">
           <img class="thumbnail2" src="assets/images/brand_focus5.png">
@@ -370,9 +393,93 @@
           <img class="thumbnail2" src="assets/images/brand_focus10.png">
           <p class="brand_name">몽끌레르</p>
         </div>
+      </div>
     </section>
     <section class="zip">
-
+      <div class="topbar_wrapper">
+        <div class="title_wrapper">
+          <p class="main_title">
+            올여름, 실패없는 남친룩 코디 모음.zip
+          </p>
+        </div>
+      </div>
+      <div class="swiper-container lookbook_swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide lookbook_container">
+            <div class="swiper-slide-container lookbook_wrapper">
+              <img class="lookbook" src="assets/images/zip1-1.png">
+              <img class="author" src="assets/images/zip1-2.png">
+              <p class="tag">@eyeshoppin</p>
+            </div>
+          </div>
+          <div class="swiper-slide lookbook_container">
+            <div class="swiper-slide-container lookbook_wrapper">
+              <img class="lookbook" src="assets/images/zip2-1.png">
+              <img class="author" src="assets/images/zip2-2.png">
+              <p class="tag">@183.h.g</p>
+            </div>
+          </div>
+          <div class="swiper-slide lookbook_container">
+            <div class="swiper-slide-container lookbook_wrapper">
+              <img class="lookbook" src="assets/images/zip3-1.png">
+              <img class="author" src="assets/images/zip3-2.png">
+              <p class="tag">@kimwonhoon</p>
+            </div>
+          </div>
+          <div class="swiper-slide lookbook_container">
+            <div class="swiper-slide-container lookbook_wrapper">
+              <img class="lookbook" src="assets/images/zip4-1.png">
+              <img class="author" src="assets/images/zip4-2.png">
+              <p class="tag">@eyeshoppin</p>
+            </div>
+          </div>
+          <div class="swiper-slide lookbook_container">
+            <div class="swiper-slide-container lookbook_wrapper">
+              <img class="lookbook" src="assets/images/zip5-1.png">
+              <img class="author" src="assets/images/zip5-2.png">
+              <p class="tag">@h.yun_b</p>
+            </div>
+          </div>
+          <div class="swiper-slide lookbook_container">
+            <div class="swiper-slide-container lookbook_wrapper">
+              <img class="lookbook" src="assets/images/zip6-1.png">
+              <img class="author" src="assets/images/zip6-2.png">
+              <p class="tag">@eyeshoppin</p>
+            </div>
+          </div>
+          <div class="swiper-slide lookbook_container">
+            <div class="swiper-slide-container lookbook_wrapper">
+              <img class="lookbook" src="assets/images/zip7-1.png">
+              <img class="author" src="assets/images/zip7-2.png">
+              <p class="tag">@h0ngt0graphy</p>
+            </div>
+          </div>
+          <div class="swiper-slide lookbook_container">
+            <div class="swiper-slide-container lookbook_wrapper">
+              <img class="lookbook" src="assets/images/zip8-1.png">
+              <img class="author" src="assets/images/zip8-2.png">
+              <p class="tag">@wooramie</p>
+            </div>
+          </div>
+          <div class="swiper-slide lookbook_container">
+            <div class="swiper-slide-container lookbook_wrapper">
+              <img class="lookbook" src="assets/images/zip9-1.png">
+              <img class="author" src="assets/images/zip9-2.png">
+              <p class="tag">@gkawlgns</p>
+            </div>
+          </div>
+          <div class="swiper-slide lookbook_container">
+            <div class="swiper-slide-container lookbook_wrapper">
+              <img class="lookbook" src="assets/images/zip10-1.png">
+              <img class="author" src="assets/images/zip10-2.png">
+              <p class="tag">@eyeshoppin</p>
+            </div>
+          </div>           
+        </div>
+        <div class="swiper-button-prev lookbook_prev_btn"></div>
+        <div class="swiper-button-next lookbook_next_btn"></div>
+      </div>
+      
     </section>
     <section class="replica">
       <div class="topbar_wrapper">
@@ -390,8 +497,10 @@
       </div>
       <div class="thumbnail_container">
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/replica1.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/replica1.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Adidas</p>
             <p class="cloth_name">Adidas Bayern Munchen 2023/24 Home Jersey White Red - KR Sizing (Non Marking Ver.)</p>
@@ -401,8 +510,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/replica2.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/replica2.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Puma</p>
             <p class="cloth_name">Puma Manchester City 2022/23 Home Jersey Team Light Blue (Non Marking Ver.)</p>
@@ -412,8 +523,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/replica3.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/replica3.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Jordan</p>
             <p class="cloth_name">Jordan x Paris Saint-Germain x 3.Paradis 2022/23 Dri-Fit Stadium Away Jersey</p>
@@ -423,8 +536,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/replica4.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/replica4.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Adidas</p>
             <p class="cloth_name">Adidas Manchester United 2022/23 Home Jersey Real Red - US Sizing (Non Marking Ver.)
@@ -455,8 +570,10 @@
       </div>
       <div class="thumbnail_container">
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/loafer1.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/loafer1.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Dr. Martens</p>
             <p class="cloth_name">Dr. Martens 1461 Mono Black</p>
@@ -466,8 +583,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/loafer2.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/loafer2.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Lemaire</p>
             <p class="cloth_name">Lemaire Piped Slippers Black</p>
@@ -477,8 +596,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/loafer3.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/loafer3.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Prada</p>
             <p class="cloth_name">Prada Chocolate Brushed Leather Loafers Black</p>
@@ -488,8 +609,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/loafer4.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/loafer4.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Clarks</p>
             <p class="cloth_name">Clarks Wallabee Suede Black</p>
@@ -519,8 +642,10 @@
       </div>
       <div class="thumbnail_container">
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/zara1.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/zara1.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Zara. Martens</p>
             <p class="cloth_name">Zara Utility Cargo Jeans Black</p>
@@ -530,8 +655,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/zara2.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/zara2.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Ader Error</p>
             <p class="cloth_name">Ader Error x Zara Backpack Black</p>
@@ -541,8 +668,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/zara3.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/zara3.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Ader Error</p>
             <p class="cloth_name">Ader Error x Zara Graphic T-Shirt White</p>
@@ -552,8 +681,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/zara4.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/zara4.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Clarks</p>
             <p class="cloth_name">Clarks Wallabee Suede Black</p>
@@ -583,8 +714,10 @@
       </div>
       <div class="thumbnail_container">
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/nike1.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/nike1.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Nike</p>
             <p class="cloth_name">Nike x Comme des Garcons Homme Plus Terminator High Red</p>
@@ -594,8 +727,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/nike2.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/nike2.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Nike</p>
             <p class="cloth_name">Ader Error x Zara Backpack Black</p>
@@ -605,8 +740,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/nike3.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/nike3.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Nike</p>
             <p class="cloth_name">Ader Error x Zara Graphic T-Shirt White</p>
@@ -616,8 +753,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/nike4.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/nike4.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Nike</p>
             <p class="cloth_name">Clarks Wallabee Suede Black</p>
@@ -647,8 +786,10 @@
       </div>
       <div class="thumbnail_container">
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/windbreaker1.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/windbreaker1.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">OY</p>
             <p class="cloth_name">[KREAM Exclusive] OY Curved Zipper Wind Breaker Jacket Khaki</p>
@@ -658,8 +799,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/windbreaker2.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/windbreaker2.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Arc'teryx</p>
             <p class="cloth_name">Arc'teryx Squamish Hoody Blackk</p>
@@ -669,8 +812,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/windbreaker3.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/windbreaker3.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Palace</p>
             <p class="cloth_name">Palace x Oakley Nitrofuel Jacket Black - 23SS</p>
@@ -680,8 +825,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/windbreaker4.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/windbreaker4.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Stussy</p>
             <p class="cloth_name">Stussy Wave Dye Beach Shell Jacket Black</p>
@@ -711,8 +858,10 @@
       </div>
       <div class="thumbnail_container">
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/eyewear1.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/eyewear1.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Gentle Monster</p>
             <p class="cloth_name">Gentle Monster x D'heygere Rings 01 Black</p>
@@ -722,8 +871,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/eyewear2.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/eyewear2.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Oakley</p>
             <p class="cloth_name">Oakley RadaLock Path Polished Black Frame Prizm Black Lenses Low Bridge Fit</p>
@@ -733,8 +884,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/eyewear3.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/eyewear3.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Gentle Monster</p>
             <p class="cloth_name">Gentle Monster x Thug Club Techno 01 Black</p>
@@ -744,8 +897,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/eyewear4.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/eyewear4.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">IAB Studio</p>
             <p class="cloth_name">IAB Studio Sunglasses B Black - The Hyundai Seoul Exclusive</p>
@@ -772,8 +927,10 @@
       </div>
       <div class="thumbnail_container">
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/weekly_popular1.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/weekly_popular1.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Nike</p>
             <p class="cloth_name">Nike Dunk Low Pro Premium Medium Curry</p>
@@ -783,8 +940,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/weekly_popular2.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/weekly_popular2.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">New Balance</p>
             <p class="cloth_name">New Balance 1906R White Gold</p>
@@ -794,8 +953,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/weekly_popular3.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/weekly_popular3.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Converse</p>
             <p class="cloth_name">Converse x Ader Error Chuck 70 Ox Imperial Blue</p>
@@ -805,8 +966,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/weekly_popular4.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/weekly_popular4.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Nike</p>
             <p class="cloth_name">Nike NSW Woven Lined Flow Shorts Black - Asia</p>
@@ -815,11 +978,11 @@
             <p class="price_info">즉시 구매가</p>
           </div>
         </div>
-      </div>
-      <div class="thumbnail_container">
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/weekly_popular1.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/weekly_popular1.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Nike</p>
             <p class="cloth_name">Nike Dunk Low Pro Premium Medium Curry</p>
@@ -829,8 +992,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/weekly_popular2.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/weekly_popular2.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">New Balance</p>
             <p class="cloth_name">New Balance 1906R White Gold</p>
@@ -840,8 +1005,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/weekly_popular3.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/weekly_popular3.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Converse</p>
             <p class="cloth_name">Converse x Ader Error Chuck 70 Ox Imperial Blue</p>
@@ -851,8 +1018,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/weekly_popular4.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/weekly_popular4.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Nike</p>
             <p class="cloth_name">Nike NSW Woven Lined Flow Shorts Black - Asia</p>
@@ -861,11 +1030,11 @@
             <p class="price_info">즉시 구매가</p>
           </div>
         </div>
-      </div>
-      <div class="thumbnail_container">
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/weekly_popular1.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/weekly_popular1.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">Nike</p>
             <p class="cloth_name">Nike Dunk Low Pro Premium Medium Curry</p>
@@ -875,8 +1044,10 @@
           </div>
         </div>
         <div class="thumbnail_row">
-          <img class="thumbnail" src="assets/images/weekly_popular2.png">
-          <img class="bookmark" src="assets/icons/bookmark.png">
+          <div class="thumbnail_wrapper">
+            <img class="thumbnail" src="assets/images/weekly_popular2.png">
+            <img class="bookmark" src="assets/icons/bookmark.png">
+          </div>
           <div class="thumbnail_info">
             <p class="brand">New Balance</p>
             <p class="cloth_name">New Balance 1906R White Gold</p>
